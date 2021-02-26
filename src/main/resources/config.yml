@@ -1,0 +1,43 @@
+# ${project.artifactId} v.${project.version}
+# Created by Velinquish <3
+
+# What will appear in front of every message sent by the plugin
+plugin-prefix: '&4&lBosses &8» &7'
+
+# Main command for ${project.artifactId}
+main-command: 'boss'
+# Plugin aliases - alternatives to COMMAND
+plugin-aliases:
+    - 'bosses'
+    - 'cosmicboss'
+    - 'cosmicbosses'
+    
+# Permission for configuring Meteors. The %action% placeholder will be replaced with the following valid actions:
+# - set
+# - add
+# - spawn
+# - reload
+permission: 'bosses.%action%'
+
+# Maximum number of bosses than can exist at any one point in time
+max-bosses: 1
+
+# The defaults for every boss. If a setting is not specified in the bosses section, it will use the setting here.
+defaults:
+    # The amount of time in seconds after the boss spawns that the boss despawns by default. Set to -1 to disable. Default - 3 minutes.
+    despawn-time: 180
+    # The message that broadcasts when the boss despawns
+    broadcast: '&8(&c&l!&8) &7The boss was not killed in time.'
+
+# Special boss-specific settings
+bosses:
+    space_wither:
+        # The message that broadcasts when the boss despawns
+        broadcast: '&8(&c&l!&8) &7The &4Withered Chieftain&7 was not killed in time.'
+        # The permission required to receive the broadcasted message
+        permission: 'worlds.access.space'
+
+# Enable debug mode
+debug: true
+# Do not touch this unless you know what you are doing!
+config-version: 1

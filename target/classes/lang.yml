@@ -1,0 +1,59 @@
+# You may turn any message here into something like this with hover/run/suggest effects on the text.
+# Each element of the list is another segment of the message with different effects.
+command-message:
+  - message: '&8&m===========&4&l Bosses &7Commands &8&m==========='
+  # If new-line is true, the next segment will appear on a new line. Otherwise, it'll be attached to the end of the last segment.
+  - new-line: true
+    message: '&c/boss help&8: &7Displays this message'
+    hover: '&eClick to run'
+    run: '/boss help'
+  - new-line: true
+    message: '&c/boss spawn&8: &7Spawns a MythicMob'
+    hover: '&eClick to run'
+    suggest: '/boss spawn '
+  - new-line: true
+    message: '&c/boss add&8: &7Adds the item in hand to a kit'
+    hover: '&eClick to run'
+    suggest: '/boss add '
+  - new-line: true
+    message: '&c/boss set&8: &7Sets a kit to your inventory items'
+    hover: '&eClick to run'
+    suggest: '/boss set '
+  - new-line: true
+    message: '&c/boss list&8: &7Lists all existing kits'
+    hover: '&eClick to run'
+    run: '/boss list'
+  - new-line: true
+    message: '&c/boss about&8: &7Gives you plugin information'
+    hover: '&eClick to run'
+    run: '/boss version'
+  - new-line: true
+    message: '&c/boss reload&8: &7Reloads the configuration files'
+    hover: '&eClick to run'
+    run: '/boss reload'
+  
+kit-list-heading: '&8&m================&4&l Kit &7List &8&m================'
+kit-list-item: '&7- &c%kit%'
+    
+plugin-reloaded: '%prefix%CosmicBosses has been successfully &c&nreloaded!'
+
+command-spawn-usage: '%prefix%&c/boss spawn &f<mythicmob> <instant drop kit> [<normal drop kit>] [<location>]'
+command-spawn-console-usage: '%prefix%&c/boss spawn &f<mythicmob> <instant drop kit> [<normal drop kit>] <location>'
+command-add-usage: '%prefix%&c/boss add &f<kit>'
+command-set-usage: '%prefix%&c/boss set &f<kit>'
+
+item-added-to-kit: '%prefix%&c%item%&7 has been added to kit &c%kit%!'
+kit-set: '%prefix%Kit &c%kit%&7 has been set to the contents of your inventory.'
+kit-created: '%prefix%Kit &c%kit%&7 has been created with the specified item(s).'
+
+no-permission: '%prefix%You must have the permission &3&n%permission%&7 to execute this command.'
+not-a-player: '%prefix%You must be a player to run this command.'
+invalid-world: '%prefix%&c%world%&7 is not a valid world! Please enter a valid world name.'
+invalid-mob: '%prefix%&c%boss% &7is not a valid MythicMob! Use &c/mm m list&7 to see valid mobs.'
+invalid-kit: '%prefix%&c%kit% &7is not a valid kit! Use &c/boss list&7 to see valid kits. Use &c/boss&7 to see kit creation commands.'
+invalid-material: '%prefix%The item in your hand is not a valid material!'
+no-kits-exist: '%prefix%No kits exist. Use &c/kit set &7to create a kit.'
+
+joined-in-boss-fight: '&8» &7You have joined the fight!'
+instant-drop-message: '%prefix%&7You received &e&l1 X GLOWSTONE DUST &7for participating in the boss fight!'
+boss-death-broadcast: '%prefix%The boss has been slain!'

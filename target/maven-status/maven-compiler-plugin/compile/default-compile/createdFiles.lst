@@ -1,0 +1,8 @@
+net\velinquish\cosmicbosses\commands\ReloadCommand.class
+net\velinquish\cosmicbosses\CosmicBosses.class
+net\velinquish\cosmicbosses\commands\AddCommand.class
+net\velinquish\cosmicbosses\commands\CommandManager.class
+net\velinquish\cosmicbosses\commands\ListCommand.class
+net\velinquish\cosmicbosses\commands\VersionCommand.class
+net\velinquish\cosmicbosses\commands\SetCommand.class
+net\velinquish\cosmicbosses\commands\SpawnCommand.class
